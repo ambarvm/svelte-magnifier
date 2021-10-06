@@ -2,30 +2,30 @@ name: Deploy Demo
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - uses: pnpm/action-setup@v2.0.1
-      with:
-        version: 6.16.0
-    - name: Setup Node
-      uses: actions/setup-node@v2
-      with:
-        node-version: 16.x
-        cache: 'pnpm'
-    - run: pnpm i --frozen-lockfile
-    - run: pnpm build
-    - name: Deploy to GitHub pages
-      if: success()
-      uses: crazy-max/ghaction-github-pages@v2
-      with:
-        target_branch: gh-pages
-        build_dir: build
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v2
+      - uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 6.16.0
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+          cache: 'pnpm'
+      - run: pnpm i --frozen-lockfile
+      - run: pnpm build
+      - name: Deploy to GitHub pages
+        if: success()
+        uses: crazy-max/ghaction-github-pages@v2
+        with:
+          target_branch: gh-pages
+          build_dir: build
+          jekyll: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
