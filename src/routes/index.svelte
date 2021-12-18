@@ -1,4 +1,5 @@
 <script>
+	import { base } from '$app/paths';
 	import Magnifier from '$lib/Magnifier.svelte';
 </script>
 
@@ -11,7 +12,7 @@
 	</p>
 
 	<div>
-		<Magnifier src="/test-image.jpg" alt="Example" />
+		<Magnifier src="{base}/test-image.jpg" alt="Example" />
 	</div>
 
 	<p>
