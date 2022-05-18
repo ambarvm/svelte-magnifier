@@ -8,7 +8,7 @@ This is a Svelte adaptation of [react-magnifier](https://github.com/samuelmeuli/
 - Supports touch screens
 - Allows different files for large image and magnifying glass (e.g. thumbnail and high-resolution image)
 
-**[Demo](https://supercoww.github.io/svelte-magnifier)**
+**[Demo](https://ambarvm.github.io/svelte-magnifier)**
 
 <p align="center">
   <img src=".github/demo.jpg" width=600 alt="Demo">
