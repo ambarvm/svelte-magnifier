@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<base href="./" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Svelte Magnifier</title>
+		
+
+		
+
+		<link rel="modulepreload" href="/svelte-magnifier/_app/start-a1117817.js">
+		<link rel="modulepreload" href="/svelte-magnifier/_app/chunks/vendor-f69e2f78.js">
+		<link rel="modulepreload" href="/svelte-magnifier/_app/chunks/paths-28a87002.js">
+		<link rel="modulepreload" href="/svelte-magnifier/_app/layout.svelte-b0f652b6.js">
+		<link rel="modulepreload" href="/svelte-magnifier/_app/pages/index.svelte-88533050.js">
+		<link rel="stylesheet" href="/svelte-magnifier/_app/assets/start-fcddce2f.css">
+		<link rel="stylesheet" href="/svelte-magnifier/_app/assets/pages/index.svelte-82fb4f42.css">
+
+		<script type="module">
+			import { start } from "/svelte-magnifier/_app/start-a1117817.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"/svelte-magnifier","assets":""},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/svelte-magnifier/_app/layout.svelte-b0f652b6.js"),
+						import("/svelte-magnifier/_app/pages/index.svelte-88533050.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "\u002F",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<main class="svelte-1c2mfde"><h1>svelte-magnifier</h1>
+
+	<p class="svelte-1c2mfde"><a href="https://github.com/supercoww/svelte-magnifier" class="svelte-1c2mfde">GitHub</a>
+		<a href="https://www.npmjs.com/package/svelte-magnifier" class="svelte-1c2mfde">npm</a></p>
+
+	<div><div class="magnifier  svelte-6tztd no-overflow" style="width: 100%; height: auto"><img src="/svelte-magnifier/test-image.jpg" alt="Example" class="magnifier-image svelte-6tztd">
+	
+</div></div>
+
+	<p class="svelte-1c2mfde">Based on
+		<a href="https://github.com/samuelmeuli/react-magnifier/" target="_blank" rel="noopener" class="svelte-1c2mfde">react-magnifier
+		</a>
+		by Samuel Meuli
+	</p>
+</main>
+
+
+
+			
+		</div>
+	</body>
+</html>
