@@ -1,5 +1,7 @@
 # svelte-magnifier
 
+This is a Svelte adaptation of [react-magnifier](https://github.com/samuelmeuli/react-magnifier), which is the original version. Someone else made a Vue version, called [vue-magnifier](https://github.com/WebsiteBeaver/vue-magnifier), as well.
+
 **Svelte image magnifier component**
 
 - Simple and customizable
